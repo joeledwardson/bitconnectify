@@ -1,0 +1,22 @@
+{
+	"name": "bitconnectify",
+	"description": "My wife still doesn't believe in me!",
+	"version": "1.0",
+	"manifest_version": 2,
+	"background": {
+		"service_worker": "background.js"
+	},
+	"permissions": [
+		"storage", 
+		"activeTab", 
+		"webRequest", 
+		"webRequestBlocking",
+		"tabs",
+		"<all_urls>"
+	],
+	"icons": { 
+		"48": "icon48.png",
+		"128": "icon128.png" 
+	},
+	"options_page": "options.html"
+}
