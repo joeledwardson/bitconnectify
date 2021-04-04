@@ -19,7 +19,7 @@ chrome.webRequest.onHeadersReceived.addListener(
   function(details) {
     if(details.type=="main_frame") {
       console.log(`header received, bitconnect chance is ${connectify}%`);
-      if(Math.ceil(Math.random()*100) <= 5) {
+      if(Math.ceil(Math.random()*100) <= connectify) {
 	    console.log("bitconneeeeeeeccctt...");
           return {
 	        "redirectUrl": "https://www.youtube.com/watch?v=Ne-J4pAKAT4",
