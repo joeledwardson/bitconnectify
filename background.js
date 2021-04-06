@@ -1,21 +1,24 @@
 chrome.runtime.onInstalled.addListener(() => {
-	chrome.storage.sync.set({'connectify': 5}, function() {
-		console.log('bitconnectify starting at 5%...');
+	chrome.storage.sync.set({'connectify': 2}, function() {
+		console.log('bitconnectify starting at 2%...');
 	});
 });
 
 
-let connectify = 5;
+let connectify = 2;
 function readLevel() {
 	chrome.storage.sync.get(['connectify'], function(result) {
 		connectify = result['connectify'];
 		console.log(`read connectify as ${connectify}%`);
 	});
 }
-chrome.runtime.onStartup.addListener(readLevel);
+chrome.runtime.onStartup.addListener(() => {
+	readLevel();
+});
 chrome.storage.onChanged.addListener(function(changes, namespace) {
 	readLevel();
-})
+});
+readLevel();
 
 
 chrome.webRequest.onHeadersReceived.addListener(

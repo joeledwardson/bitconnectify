@@ -1,2 +1,2 @@
-![Carlos Matos - Running Bitconnect - YouTube](https://i.ytimg.com/vi/TxYJNceutVo/sddefault.jpg)
+![bitconnectify](https://media3.giphy.com/media/X10YgW2NNT7g3qTDC1/giphy.gif)
 
