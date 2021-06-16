@@ -1,5 +1,6 @@
 {
 	"name": "bitconnectify",
+	"description": "probability based user link diverting to Youtube video",
 	"version": "1",
 	"manifest_version": 2,
 	"background": {
